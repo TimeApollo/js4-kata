@@ -93,6 +93,37 @@ const kataProblemTwentyThree = () => lotrCitiesArray.includes("Hollywood") ? "Ye
 
 const kataProblemTwentyFour = () => lotrCitiesArray.findIndex(index => index === "Mirkwood");
 
+const kataProblemTwentyFive = () => {
+    let arr = lotrCitiesArray.filter(first => first.includes(" "));
+    return arr[0];
+}
+
+const kataProblemTwentySix = () => lotrCitiesArray.reverse();
+
+const kataProblemTwentySeven = () => lotrCitiesArray.sort();
+
+const kataProblemTwentyEight = () => lotrCitiesArray.sort((a,b) => a.length - b.length);
+
+const kataProblemTwentyNine = () => {
+    lotrCitiesArray.pop();
+    return lotrCitiesArray;
+}
+
+const kataProblemThirty = () => {
+    lotrCitiesArray.push("Deadest Marshes");
+    return lotrCitiesArray;
+}
+
+const kataProblemThirtyOne = () => {
+    lotrCitiesArray.shift();
+    return lotrCitiesArray;
+}
+
+const kataProblemThirtyTwo = () => {
+    lotrCitiesArray.unshift("Rohan");
+    return lotrCitiesArray;
+}
+
 kataHeaderAndAnswer("1. Display an array from the cities in gotCitiesCSV" , kataProblemOne());
 kataHeaderAndAnswer("2. Display an array of words from the sentence in bestThings" , kataProblemTwo());
 kataHeaderAndAnswer("3. Display a string separated by semi-colons instead of commas from gotCitiesCSV" , kataProblemThree());
@@ -117,14 +148,14 @@ kataHeaderAndAnswer('21. Find and display all the words in bestThing that start 
 kataHeaderAndAnswer('22. Display "Yes" or "No" if lotrCitiesArray includes "Mirkwood"' , kataProblemTwentyTwo());
 kataHeaderAndAnswer('23. Display "Yes" or "No" if lotrCitiesArray includes "Hollywood"' , kataProblemTwentyThree());
 kataHeaderAndAnswer('24. Display the index of "Mirkwood" in lotrCitiesArray' , kataProblemTwentyFour());
-// kataHeaderAndAnswer('25. Find and display the first city in lotrCitiesArray that has more than one word' , kataProblemFifteen());
-// kataHeaderAndAnswer('26. Reverse the order in lotrCitiesArray' , kataProblemFifteen());
-// kataHeaderAndAnswer('27. Sort lotrCitiesArray alphabetically' , kataProblemFifteen());
-// kataHeaderAndAnswer('28. Sort lotrCitiesArray by the number of characters in each city (i.e., shortest city names go first)' , kataProblemFifteen());
-// kataHeaderAndAnswer('29. Using pop, remove the last city from lotrCitiesArray' , kataProblemFifteen());
-// kataHeaderAndAnswer('30. Using push, add back the city from lotrCitiesArray that was removed in #29 to the back of the array' , kataProblemFifteen());
-// kataHeaderAndAnswer('31. Using shift, remove the first city from lotrCitiesArray' , kataProblemFifteen());
-// kataHeaderAndAnswer('32. Using unshift, add back the city from lotrCitiesArray that was removed in #31 to the front of the array' , kataProblemFifteen());
+kataHeaderAndAnswer('25. Find and display the first city in lotrCitiesArray that has more than one word' , kataProblemTwentyFive());
+kataHeaderAndAnswer('26. Reverse the order in lotrCitiesArray' , kataProblemTwentySix());
+kataHeaderAndAnswer('27. Sort lotrCitiesArray alphabetically' , kataProblemTwentySeven());
+kataHeaderAndAnswer('28. Sort lotrCitiesArray by the number of characters in each city (i.e., shortest city names go first)' , kataProblemTwentyEight());
+kataHeaderAndAnswer('29. Using pop, remove the last city from lotrCitiesArray' , kataProblemTwentyNine());
+kataHeaderAndAnswer('30. Using push, add back the city from lotrCitiesArray that was removed in #29 to the back of the array' , kataProblemThirty());
+kataHeaderAndAnswer('31. Using shift, remove the first city from lotrCitiesArray' , kataProblemThirtyOne());
+kataHeaderAndAnswer('32. Using unshift, add back the city from lotrCitiesArray that was removed in #31 to the front of the array' , kataProblemThirtyTwo());
 
 mainHeader();
 
