@@ -78,13 +78,13 @@ const kataProblemEighteen = () => bestThing.lastIndexOf(" ")+1;
 
 const kataProblemNineteen = () => {
     let arr = gotCitiesCSV.split(",");
-    return arr.filter(matches => /([aeiou])\1/.test(matches));
+    return arr.filter(match => /aa|ee|ii|oo|uu/i.test(match));
 }
 const kataProblemTwenty = () => JSON.stringify(lotrCitiesArray.filter(match => match.endsWith("or")));
 
 const kataProblemTwentyOne = () => {
     let arr = bestThing.split(" ");
-    return arr.filter(matches => matches.startsWith("b")).join(", ");
+    return arr.filter(match => match.startsWith("b")).join(", ");
 }
 
 const kataProblemTwentyTwo = () => lotrCitiesArray.includes("Mirkwood") ? "Yes" : "No";
