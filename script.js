@@ -30,7 +30,7 @@ const kataProblemAnswer = (answer) => {
 
 const kataProblemOne = () => JSON.stringify(gotCitiesCSV.split(","));
 
-const kataProblemTwo = () => JSON.stringify(gotCitiesCSV.split(" "));
+const kataProblemTwo = () => JSON.stringify(bestThing.split(" "));
 
 const kataProblemThree = () => gotCitiesCSV.split(",").join(";");
 
